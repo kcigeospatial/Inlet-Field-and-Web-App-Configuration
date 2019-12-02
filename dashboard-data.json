@@ -1,0 +1,2412 @@
+{
+    "version": 27,
+    "headerPanel": {
+        "type": "headerPanel",
+        "size": "medium",
+        "showMargin": true,
+        "backgroundImageSizing": "fit-height",
+        "normalBackgroundImagePlacement": "left",
+        "horizontalBackgroundImagePlacement": "top",
+        "showSignOutMenu": true,
+        "menuLinks": [],
+        "selectors": [
+            {
+                "type": "categorySelectorWidget",
+                "category": {
+                    "type": "groupByValues",
+                    "nullLabel": "Null",
+                    "blankLabel": "Blank",
+                    "labelOverrides": [
+                        {
+                            "key": 5,
+                            "label": "District 5"
+                        },
+                        {
+                            "key": 4,
+                            "label": "District 4"
+                        },
+                        {
+                            "key": 3,
+                            "label": "District 3"
+                        },
+                        {
+                            "key": 0,
+                            "label": "Unknown"
+                        }
+                    ]
+                },
+                "selection": {
+                    "type": "multiple",
+                    "operator": "is_in",
+                    "noneLabelPlacement": "first",
+                    "noneLabel": "No Selection"
+                },
+                "preferredDisplayType": "dropdown",
+                "displayThreshold": 10,
+                "datasets": [
+                    {
+                        "type": "serviceDataset",
+                        "dataSource": {
+                            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        "outFields": [
+                            "*"
+                        ],
+                        "groupByFields": [
+                            "REL_MD_DISTRICT"
+                        ],
+                        "orderByFields": [
+                            "REL_MD_DISTRICT desc"
+                        ],
+                        "statisticDefinitions": [
+                            {
+                                "onStatisticField": "REL_MD_DISTRICT",
+                                "outStatisticFieldName": "count_result",
+                                "statisticType": "count"
+                            }
+                        ],
+                        "maxFeatures": 50,
+                        "querySpatialRelationship": "esriSpatialRelIntersects",
+                        "returnGeometry": false,
+                        "clientSideStatistics": false,
+                        "name": "main"
+                    }
+                ],
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "14398ace-31b3-442d-98f3-3855ce8d6e73",
+                "name": "District Selector",
+                "caption": "District",
+                "showLastUpdate": true,
+                "noDataVerticalAlignment": "middle",
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            },
+            {
+                "type": "categorySelectorWidget",
+                "category": {
+                    "type": "groupByValues",
+                    "nullLabel": "Null",
+                    "blankLabel": "Blank",
+                    "labelOverrides": []
+                },
+                "selection": {
+                    "type": "multiple",
+                    "operator": "is_in",
+                    "noneLabelPlacement": "first",
+                    "noneLabel": "No Selection"
+                },
+                "preferredDisplayType": "dropdown",
+                "displayThreshold": 10,
+                "datasets": [
+                    {
+                        "type": "serviceDataset",
+                        "dataSource": {
+                            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        "outFields": [
+                            "*"
+                        ],
+                        "groupByFields": [
+                            "CLEAN_TEAM"
+                        ],
+                        "orderByFields": [
+                            "CLEAN_TEAM asc"
+                        ],
+                        "statisticDefinitions": [
+                            {
+                                "onStatisticField": "CLEAN_TEAM",
+                                "outStatisticFieldName": "count_result",
+                                "statisticType": "count"
+                            }
+                        ],
+                        "maxFeatures": 50,
+                        "querySpatialRelationship": "esriSpatialRelIntersects",
+                        "returnGeometry": false,
+                        "clientSideStatistics": false,
+                        "name": "main"
+                    }
+                ],
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "9a9b5864-3225-4e84-8e83-93e3de05668a",
+                "name": "Team Selector",
+                "caption": "Team",
+                "showLastUpdate": true,
+                "noDataVerticalAlignment": "middle",
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            },
+            {
+                "type": "categorySelectorWidget",
+                "category": {
+                    "type": "groupByValues",
+                    "nullLabel": "Null",
+                    "blankLabel": "Blank",
+                    "labelOverrides": [
+                        {
+                            "key": "dejuane.goode",
+                            "label": "Dejuane Goode"
+                        },
+                        {
+                            "key": "herman.barber",
+                            "label": "Herman Barber"
+                        },
+                        {
+                            "key": "tyler.pullen",
+                            "label": "Tyler Pullen"
+                        },
+                        {
+                            "key": "shaun.cullen",
+                            "label": "Shaun Cullen"
+                        },
+                        {
+                            "key": "salvador.campos",
+                            "label": "Salvador Campos"
+                        },
+                        {
+                            "key": "matthew.anderson1",
+                            "label": "Matthew Anderson"
+                        },
+                        {
+                            "key": "mark.wolcott",
+                            "label": "Mark Wolcott"
+                        },
+                        {
+                            "key": "maggie.kozloski",
+                            "label": "Maggie Kozloski"
+                        },
+                        {
+                            "key": "john.dixon1",
+                            "label": "John Dixon"
+                        },
+                        {
+                            "key": "joanna.barnett",
+                            "label": "Joanna Barnett"
+                        },
+                        {
+                            "key": "james.tunstall1",
+                            "label": "James Tunstall"
+                        },
+                        {
+                            "key": "Floyd.Ford5",
+                            "label": "Floyd Ford"
+                        },
+                        {
+                            "key": "ecarl.dixon1",
+                            "label": "Ecarl Dixon"
+                        },
+                        {
+                            "key": "dirk.lueders",
+                            "label": "Dirk Lueders"
+                        },
+                        {
+                            "key": "charles.white1",
+                            "label": "Charles White"
+                        },
+                        {
+                            "key": "brady.anderson",
+                            "label": "Brady Anderson"
+                        },
+                        {
+                            "key": "amy.mallonee",
+                            "label": "Amy Mallonee"
+                        },
+                        {
+                            "key": "amanda.looper",
+                            "label": "Amanda Looper"
+                        }
+                    ]
+                },
+                "selection": {
+                    "type": "multiple",
+                    "operator": "is_in",
+                    "noneLabelPlacement": "first",
+                    "noneLabel": "No Selection"
+                },
+                "preferredDisplayType": "dropdown",
+                "displayThreshold": 10,
+                "datasets": [
+                    {
+                        "type": "serviceDataset",
+                        "dataSource": {
+                            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        "outFields": [
+                            "*"
+                        ],
+                        "groupByFields": [
+                            "Creator"
+                        ],
+                        "orderByFields": [
+                            "Creator asc"
+                        ],
+                        "statisticDefinitions": [
+                            {
+                                "onStatisticField": "Creator",
+                                "outStatisticFieldName": "count_result",
+                                "statisticType": "count"
+                            }
+                        ],
+                        "maxFeatures": 50,
+                        "querySpatialRelationship": "esriSpatialRelIntersects",
+                        "returnGeometry": false,
+                        "clientSideStatistics": false,
+                        "name": "main"
+                    }
+                ],
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "5bbf7172-20da-482b-a5d8-a53d70ebdb08",
+                "name": "User Selector",
+                "caption": "Team member",
+                "showLastUpdate": true,
+                "noDataVerticalAlignment": "middle",
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            },
+            {
+                "type": "dateSelectorWidget",
+                "optionType": "datePicker",
+                "datePickerOption": {
+                    "type": "datePicker",
+                    "selectionType": "range",
+                    "operator": "between",
+                    "maxDefaultValue": {
+                        "type": "date",
+                        "includeTime": false,
+                        "defaultToToday": true
+                    }
+                },
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [
+                                    {
+                                        "sourceName": "filterField",
+                                        "targetName": "INSPECTION_DATE"
+                                    }
+                                ],
+                                "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "5a672f44-393e-47fb-8b09-98dc283f1807",
+                "name": "Date Range Selector",
+                "caption": "Date Range",
+                "showLastUpdate": true,
+                "noDataVerticalAlignment": "middle",
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            }
+        ]
+    },
+    "widgets": [
+        {
+            "type": "mapWidget",
+            "flashRepeats": 3,
+            "itemId": "e15e20c7749743e4a75f368520616a55",
+            "mapTools": [
+                {
+                    "type": "bookmarksTool"
+                },
+                {
+                    "type": "legendTool"
+                },
+                {
+                    "type": "mapContentsTool"
+                },
+                {
+                    "type": "basemapGalleryTool"
+                },
+                {
+                    "type": "searchTool"
+                }
+            ],
+            "showNavigation": true,
+            "showPopup": true,
+            "scalebarStyle": "line",
+            "layers": [
+                {
+                    "type": "featureLayerDataSource",
+                    "layerId": "survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                },
+                {
+                    "type": "mapServiceLayerDataSource",
+                    "subLayerId": 0,
+                    "layerId": "Inlet_ICP_PC_Status_View_Maryland_SHA_9200"
+                }
+            ],
+            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517",
+            "name": "Inlet Cleaning Survey Map",
+            "caption": "<p>Inlet Cleaning Survey Map</p>\n",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "indicatorWidget",
+            "defaultSettings": {
+                "topSection": {
+                    "fontSize": 80,
+                    "textInfo": {
+                        "text": "Cleaned Inlets"
+                    }
+                },
+                "middleSection": {
+                    "fontSize": 160,
+                    "textInfo": {
+                        "text": "{value}"
+                    }
+                },
+                "bottomSection": {
+                    "fontSize": 80,
+                    "textInfo": {
+                        "text": "out of {reference} visits"
+                    }
+                }
+            },
+            "comparison": "statistic",
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": false
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false
+            },
+            "ratioFormat": {
+                "name": "ratio",
+                "type": "decimal",
+                "prefix": false
+            },
+            "valueType": "statistic",
+            "noValueVerticalAlignment": "middle",
+            "showCaptionWhenNoValue": true,
+            "showDescriptionWhenNoValue": true,
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "reference"
+                },
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "CLEAN_STATUS",
+                                            "type": "esriFieldTypeString"
+                                        },
+                                        "operator": "is_in",
+                                        "constraint": {
+                                            "type": "values",
+                                            "values": [
+                                                "cleaned",
+                                                "cleaning_pipe_issue",
+                                                "cleaned_missing_photo",
+                                                "cleaning_pipe_issue_missing_photo"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "46416891-c61e-42a0-ba5d-bb324e47c75e",
+            "name": "Overall Records",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "indicatorWidget",
+            "defaultSettings": {
+                "topSection": {
+                    "fontSize": 80,
+                    "textInfo": {
+                        "text": "Today"
+                    }
+                },
+                "middleSection": {
+                    "fontSize": 160,
+                    "textInfo": {
+                        "text": "{value} "
+                    }
+                },
+                "bottomSection": {
+                    "fontSize": 80,
+                    "textInfo": {
+                        "text": ""
+                    }
+                }
+            },
+            "comparison": "none",
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": false
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false
+            },
+            "ratioFormat": {
+                "name": "ratio",
+                "type": "decimal",
+                "prefix": false
+            },
+            "valueType": "statistic",
+            "noValueVerticalAlignment": "middle",
+            "showCaptionWhenNoValue": true,
+            "showDescriptionWhenNoValue": true,
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "INSPECTION_DATE",
+                                            "type": "esriFieldTypeDate"
+                                        },
+                                        "operator": "is_on",
+                                        "constraint": {
+                                            "type": "period",
+                                            "value": "today"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "a2c4bb86-de17-457a-8580-d6bb247c8bf8",
+            "name": "Last 7 days",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "serialChartWidget",
+            "category": {
+                "labelOverrides": [
+                    {
+                        "key": "cleaning_pipe_issue",
+                        "label": "Cleaned w/ pipe issue"
+                    },
+                    {
+                        "key": "cleaned_missing_photo",
+                        "label": "Cleaned w/ missing photo"
+                    },
+                    {
+                        "key": "skipped",
+                        "label": "Skipped"
+                    },
+                    {
+                        "key": "cleaned",
+                        "label": "Cleaned"
+                    }
+                ],
+                "byCategoryColors": true,
+                "colors": [
+                    {
+                        "key": "Cleaned (w/ Pipe Issue and Missing Photo)",
+                        "color": "#e8beff"
+                    },
+                    {
+                        "key": "Cleaned (w/ Pipe Issue)",
+                        "color": "#ffaa00"
+                    },
+                    {
+                        "key": "Cleaned (w/ Missing Photo)",
+                        "color": "#c500ff"
+                    },
+                    {
+                        "key": "Skipped",
+                        "color": "#ffff00"
+                    },
+                    {
+                        "key": "Cleaned",
+                        "color": "#4ce600"
+                    }
+                ],
+                "labelsPlacement": "wrapped",
+                "labelRotation": 30,
+                "fieldName": "CLEAN_STATUS",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "labelFormat": {
+                "name": "label",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "datePeriodPatterns": [
+                {
+                    "period": "ss",
+                    "pattern": "HH:mm:ss"
+                },
+                {
+                    "period": "mm",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "hh",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "DD",
+                    "pattern": "MMM d"
+                },
+                {
+                    "period": "MM",
+                    "pattern": "MMM"
+                },
+                {
+                    "period": "YYYY",
+                    "pattern": "yyyy"
+                }
+            ],
+            "chartScrollbar": {
+                "enabled": false,
+                "dragIcon": "dragIconRoundSmall",
+                "dragIconHeight": 20,
+                "dragIconWidth": 20,
+                "scrollbarHeight": 15
+            },
+            "categoryAxis": {
+                "titleRotation": 0,
+                "gridPosition": "start",
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "parseDates": false,
+                "minPeriod": "DD"
+            },
+            "valueAxis": {
+                "titleRotation": 270,
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "stackType": "none",
+                "integersOnly": false,
+                "logarithmic": false
+            },
+            "legend": {
+                "enabled": false,
+                "position": "bottom",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 0
+            },
+            "graphs": [
+                {
+                    "valueField": "value",
+                    "lineColor": "#ffaa00",
+                    "lineColorField": "_lineColor_",
+                    "fillColorsField": "_fillColor_",
+                    "type": "column",
+                    "fillAlphas": 1,
+                    "lineAlpha": 1,
+                    "lineThickness": 1,
+                    "bullet": "none",
+                    "bulletAlpha": 1,
+                    "bulletBorderAlpha": 0,
+                    "bulletBorderThickness": 2,
+                    "showBalloon": true,
+                    "bulletSize": 8
+                }
+            ],
+            "guides": [],
+            "splitBy": {
+                "defaultColor": "#d6d6d6",
+                "seriesProperties": []
+            },
+            "rotate": false,
+            "commonGraphProperties": {
+                "lineColorField": "_lineColor_",
+                "fillColorsField": "_fillColor_",
+                "type": "column",
+                "fillAlphas": 1,
+                "lineAlpha": 1,
+                "lineThickness": 1,
+                "bullet": "none",
+                "bulletAlpha": 1,
+                "bulletBorderAlpha": 0,
+                "bulletBorderThickness": 2,
+                "showBalloon": true,
+                "bulletSize": 8
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "CLEAN_STATUS"
+                    ],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "339639d6-ad43-4fe7-ab98-55b90e06c26e",
+            "name": "Cleaning Categories",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "pieChartWidget",
+            "category": {
+                "sliceProperties": [
+                    {
+                        "key": 3,
+                        "label": "District 3",
+                        "color": "#ffff00"
+                    },
+                    {
+                        "key": 4,
+                        "label": "District 4",
+                        "color": "#734c00"
+                    },
+                    {
+                        "key": 0,
+                        "label": "Unknown",
+                        "color": "#858585"
+                    },
+                    {
+                        "key": 5,
+                        "label": "District 5",
+                        "color": "#0070ff"
+                    }
+                ],
+                "fieldName": "REL_MD_DISTRICT",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "pie": {
+                "type": "pie",
+                "titleField": "category",
+                "valueField": "absoluteValue",
+                "alpha": 1,
+                "outlineAlpha": 0,
+                "outlineColor": "",
+                "outlineThickness": 1,
+                "innerRadius": 0,
+                "labelsEnabled": false,
+                "labelsFormat": "hide",
+                "labelTickAlpha": 0.5,
+                "labelTickColor": "",
+                "maxLabelWidth": 100,
+                "startAngle": 90,
+                "autoMargins": false,
+                "marginTop": 0,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "groupedColor": "#d6d6d6"
+            },
+            "legend": {
+                "enabled": true,
+                "format": "value",
+                "position": "right",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 50
+            },
+            "showBalloon": true,
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false,
+                "pattern": "#.##"
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "REL_MD_DISTRICT"
+                    ],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "maxFeatures": 20,
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "8df54c92-a2f1-4e93-a532-e9538d6b2d57",
+            "name": "District Chart",
+            "caption": "<p>District</p>\n",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "pieChartWidget",
+            "category": {
+                "sliceProperties": [
+                    {
+                        "key": "MES",
+                        "label": "MES",
+                        "color": "#73b2ff"
+                    },
+                    {
+                        "key": "DBI",
+                        "label": "DBI",
+                        "color": "#ffaa00"
+                    },
+                    {
+                        "key": "TriState",
+                        "label": "TriState",
+                        "color": "#df73ff"
+                    },
+                    {
+                        "key": "D5",
+                        "label": "D5",
+                        "color": "#55ff00"
+                    }
+                ],
+                "fieldName": "CLEAN_TEAM",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "pie": {
+                "type": "pie",
+                "titleField": "category",
+                "valueField": "absoluteValue",
+                "alpha": 1,
+                "outlineAlpha": 0,
+                "outlineColor": "",
+                "outlineThickness": 1,
+                "innerRadius": 0,
+                "labelsEnabled": false,
+                "labelsFormat": "hide",
+                "labelTickAlpha": 0.5,
+                "labelTickColor": "",
+                "maxLabelWidth": 100,
+                "startAngle": 90,
+                "autoMargins": false,
+                "marginTop": 0,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "groupedColor": "#d6d6d6"
+            },
+            "legend": {
+                "enabled": true,
+                "format": "value",
+                "position": "right",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 50
+            },
+            "showBalloon": true,
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false,
+                "pattern": "#.##"
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "160038b3-118a-4ef5-9b77-b3461fb751c4#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#reference"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "14398ace-31b3-442d-98f3-3855ce8d6e73#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "CLEAN_TEAM"
+                    ],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "maxFeatures": 20,
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "75a3ff9b-39e3-4562-a8a0-510bbc132f39",
+            "name": "Team Chart",
+            "caption": "<p>Team</p>\n",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "serialChartWidget",
+            "category": {
+                "labelOverrides": [
+                    {
+                        "key": "standing_water",
+                        "label": "Standing Water"
+                    },
+                    {
+                        "key": "not_dirty",
+                        "label": "Not Dirty"
+                    },
+                    {
+                        "key": "Other",
+                        "label": "Other"
+                    },
+                    {
+                        "key": "Inlet not found",
+                        "label": "Inlet not found"
+                    },
+                    {
+                        "key": "grate_weld_bolt",
+                        "label": "Grate welded or bolted"
+                    },
+                    {
+                        "key": "grate_damage",
+                        "label": "Grate damaged"
+                    },
+                    {
+                        "key": "not_accessible",
+                        "label": "Not accessible"
+                    },
+                    {
+                        "key": "MOT required",
+                        "label": "MOT required"
+                    },
+                    {
+                        "key": "Dangerous condition",
+                        "label": "Dangerous condition"
+                    }
+                ],
+                "byCategoryColors": true,
+                "colors": [
+                    {
+                        "key": "standing_water",
+                        "color": "#00ffc5"
+                    },
+                    {
+                        "key": "not_dirty",
+                        "color": "#c500ff"
+                    },
+                    {
+                        "key": "Other",
+                        "color": "#ed5151"
+                    },
+                    {
+                        "key": "Inlet not found",
+                        "color": "#149ece"
+                    },
+                    {
+                        "key": "grate_weld_bolt",
+                        "color": "#a7c636"
+                    },
+                    {
+                        "key": "grate_damage",
+                        "color": "#9e559c"
+                    },
+                    {
+                        "key": "not_accessible",
+                        "color": "#fc921f"
+                    },
+                    {
+                        "key": "MOT required",
+                        "color": "#ffde3e"
+                    },
+                    {
+                        "key": "Dangerous condition",
+                        "color": "#f789d8"
+                    }
+                ],
+                "labelsPlacement": "wrapped",
+                "labelRotation": 0,
+                "fieldName": "SKIP_INLET",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "labelFormat": {
+                "name": "label",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "datePeriodPatterns": [
+                {
+                    "period": "ss",
+                    "pattern": "HH:mm:ss"
+                },
+                {
+                    "period": "mm",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "hh",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "DD",
+                    "pattern": "MMM d"
+                },
+                {
+                    "period": "MM",
+                    "pattern": "MMM"
+                },
+                {
+                    "period": "YYYY",
+                    "pattern": "yyyy"
+                }
+            ],
+            "chartScrollbar": {
+                "enabled": false,
+                "dragIcon": "dragIconRoundSmall",
+                "dragIconHeight": 20,
+                "dragIconWidth": 20,
+                "scrollbarHeight": 15
+            },
+            "categoryAxis": {
+                "titleRotation": 270,
+                "gridPosition": "start",
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "parseDates": false,
+                "minPeriod": "DD"
+            },
+            "valueAxis": {
+                "titleRotation": 0,
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "stackType": "none",
+                "integersOnly": false,
+                "logarithmic": false
+            },
+            "legend": {
+                "enabled": false,
+                "position": "bottom",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 0
+            },
+            "graphs": [
+                {
+                    "valueField": "value",
+                    "lineColor": "#ffaa00",
+                    "lineColorField": "_lineColor_",
+                    "fillColorsField": "_fillColor_",
+                    "type": "column",
+                    "fillAlphas": 1,
+                    "lineAlpha": 1,
+                    "lineThickness": 1,
+                    "bullet": "none",
+                    "bulletAlpha": 1,
+                    "bulletBorderAlpha": 0,
+                    "bulletBorderThickness": 2,
+                    "showBalloon": true,
+                    "bulletSize": 8
+                }
+            ],
+            "guides": [],
+            "splitBy": {
+                "defaultColor": "#d6d6d6",
+                "seriesProperties": []
+            },
+            "rotate": true,
+            "commonGraphProperties": {
+                "lineColorField": "_lineColor_",
+                "fillColorsField": "_fillColor_",
+                "type": "column",
+                "fillAlphas": 1,
+                "lineAlpha": 1,
+                "lineThickness": 1,
+                "bullet": "none",
+                "bulletAlpha": 1,
+                "bulletBorderAlpha": 0,
+                "bulletBorderThickness": 2,
+                "labelText": "[[value]]",
+                "showBalloon": true,
+                "bulletSize": 8
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "46416891-c61e-42a0-ba5d-bb324e47c75e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "a2c4bb86-de17-457a-8580-d6bb247c8bf8#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "339639d6-ad43-4fe7-ab98-55b90e06c26e#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "8df54c92-a2f1-4e93-a532-e9538d6b2d57#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "75a3ff9b-39e3-4562-a8a0-510bbc132f39#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "5bbf7172-20da-482b-a5d8-a53d70ebdb08#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "9a9b5864-3225-4e84-8e83-93e3de05668a#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "targetId": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "SKIP_INLET",
+                                            "type": "esriFieldTypeString"
+                                        },
+                                        "operator": "is_not_null",
+                                        "constraint": {
+                                            "type": "nil"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "SKIP_INLET"
+                    ],
+                    "orderByFields": [
+                        "value asc"
+                    ],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "objectid",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "160038b3-118a-4ef5-9b77-b3461fb751c4",
+            "name": "Skip Reasons",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "zoom",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517"
+                        },
+                        {
+                            "type": "flashGeometry",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517"
+                        },
+                        {
+                            "type": "identify",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517"
+                        }
+                    ]
+                }
+            ],
+            "type": "listWidget",
+            "iconType": "symbol",
+            "text": "<p>{REL_SHA_STR_NO}</p>\n\n<p><span style=\"font-size:12px\">{Creator} -&nbsp;<strong>{CLEAN_TEAM}</strong></span></p>\n\n<p><span style=\"font-size:10px\">{CreationDate}</span></p>\n\n<p style=\"text-align:right\">{CLEAN_STATUS}&nbsp;<em>{SKIP_INLET}</em></p>\n",
+            "selectionMode": "single",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#survey123_1d84f6f88af14f1d95bf56aa5a837a7a_stakeholder_969"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [
+                        "CreationDate desc"
+                    ],
+                    "statisticDefinitions": [],
+                    "maxFeatures": 100,
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9",
+            "name": "Recent 100",
+            "caption": "<h1>Last 100 Surveys</h1>\n",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "gaugeWidget",
+            "style": "progress",
+            "displayAsPercentage": false,
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false,
+                "pattern": "#.#%"
+            },
+            "arrows": [],
+            "axes": [
+                {
+                    "id": "main",
+                    "style": "progress",
+                    "startAngle": -90,
+                    "endAngle": 90,
+                    "startValue": 0,
+                    "endValue": 1,
+                    "labelsEnabled": false,
+                    "labelOffset": 0,
+                    "color": null,
+                    "inside": true,
+                    "gridInside": true,
+                    "axisAlpha": 0,
+                    "axisColor": null,
+                    "axisThickness": 0,
+                    "tickAlpha": 0,
+                    "tickColor": null,
+                    "tickLength": 0,
+                    "tickThickness": 0,
+                    "minorTickLength": 0,
+                    "radius": "100%",
+                    "bottomText": "",
+                    "bands": [
+                        {
+                            "id": "background",
+                            "alpha": 1,
+                            "color": "#d6d6d6",
+                            "startValue": 0,
+                            "endValue": 1,
+                            "radius": "100%",
+                            "innerRadius": "75%",
+                            "colorThresholds": []
+                        },
+                        {
+                            "id": "value",
+                            "alpha": 1,
+                            "color": "#ffaa00",
+                            "startValue": 0,
+                            "endValue": 0.5,
+                            "radius": "100%",
+                            "innerRadius": "75%",
+                            "colorThresholds": []
+                        }
+                    ]
+                },
+                {
+                    "id": "labels",
+                    "style": "progress",
+                    "startAngle": -93,
+                    "endAngle": 93,
+                    "startValue": 0,
+                    "endValue": 1,
+                    "labelsEnabled": true,
+                    "labelOffset": 0,
+                    "fontSize": 20,
+                    "color": null,
+                    "inside": true,
+                    "gridInside": true,
+                    "axisAlpha": 0,
+                    "axisColor": null,
+                    "axisThickness": 0,
+                    "tickAlpha": 0,
+                    "tickColor": null,
+                    "tickLength": 0,
+                    "tickThickness": 0,
+                    "minorTickLength": 0,
+                    "radius": "100%",
+                    "bottomText": "",
+                    "bands": []
+                }
+            ],
+            "labels": [
+                {
+                    "id": "value",
+                    "align": "center",
+                    "color": null,
+                    "size": 12,
+                    "y": "40%"
+                }
+            ],
+            "noValueVerticalAlignment": "middle",
+            "showCaptionWhenNoValue": true,
+            "showDescriptionWhenNoValue": true,
+            "valueType": "statistic",
+            "datasets": [
+                {
+                    "type": "staticDataset",
+                    "data": 100,
+                    "name": "max"
+                },
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#Inlet_ICP_PC_Status_View_Maryland_SHA_9200#0"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "PRE_PERCENT_CHAMBER_FULL",
+                                            "type": "esriFieldTypeSmallInteger"
+                                        },
+                                        "operator": "greater_or_equal",
+                                        "constraint": {
+                                            "type": "value",
+                                            "value": "25"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "min"
+                },
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#Inlet_ICP_PC_Status_View_Maryland_SHA_9200#0"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "ETL_PROGRAM_CATEGORY",
+                                            "type": "esriFieldTypeString"
+                                        },
+                                        "operator": "is_in",
+                                        "constraint": {
+                                            "type": "values",
+                                            "values": [
+                                                "RECENT_CLEANED_PIPE_ISSUE",
+                                                "RECENT_CLEANED"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "PRE_PERCENT_CHAMBER_FULL",
+                                            "type": "esriFieldTypeSmallInteger"
+                                        },
+                                        "operator": "greater_or_equal",
+                                        "constraint": {
+                                            "type": "value",
+                                            "value": 25
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "7aac47d1-d14c-4a03-9237-57ca0a22733e",
+            "name": "Visited High Priority",
+            "caption": "<p>High Priority Cleanings</p>\n",
+            "description": "",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "pieChartWidget",
+            "category": {
+                "sliceProperties": [
+                    {
+                        "key": "RECENT_SKIPPED",
+                        "label": "Skipped",
+                        "color": "#ffff00"
+                    },
+                    {
+                        "key": "RECENT_CLEANED_PIPE_ISSUE",
+                        "label": "Cleaned (Pipe Issue)",
+                        "color": "#e8beff"
+                    },
+                    {
+                        "key": "RECENT_CLEANED",
+                        "label": "Cleaned",
+                        "color": "#55ff00"
+                    },
+                    {
+                        "key": "CLEANING_NEEDED_PRIORITY",
+                        "label": "Not Visited",
+                        "color": "#ffbebe"
+                    }
+                ],
+                "fieldName": "ETL_PROGRAM_CATEGORY",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "pie": {
+                "type": "pie",
+                "titleField": "category",
+                "valueField": "absoluteValue",
+                "alpha": 1,
+                "outlineAlpha": 0,
+                "outlineColor": "",
+                "outlineThickness": 1,
+                "innerRadius": 0,
+                "labelsEnabled": false,
+                "labelsFormat": "hide",
+                "labelTickAlpha": 0.5,
+                "labelTickColor": "",
+                "maxLabelWidth": 100,
+                "startAngle": 90,
+                "autoMargins": false,
+                "marginTop": 0,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "groupedColor": "#d6d6d6"
+            },
+            "legend": {
+                "enabled": true,
+                "format": "value",
+                "position": "right",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 50
+            },
+            "showBalloon": true,
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false,
+                "pattern": "#.##"
+            },
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#Inlet_ICP_PC_Status_View_Maryland_SHA_9200#0"
+                    },
+                    "filter": {
+                        "type": "filterGroup",
+                        "condition": "OR",
+                        "rules": [
+                            {
+                                "type": "filterGroup",
+                                "condition": "AND",
+                                "rules": [
+                                    {
+                                        "type": "filterRule",
+                                        "field": {
+                                            "name": "PRE_PERCENT_CHAMBER_FULL",
+                                            "type": "esriFieldTypeSmallInteger"
+                                        },
+                                        "operator": "greater_or_equal",
+                                        "constraint": {
+                                            "type": "value",
+                                            "value": 25
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "ETL_PROGRAM_CATEGORY"
+                    ],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "maxFeatures": 20,
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "739eaa11-0f74-4344-93b7-46b7dd9d96e5",
+            "name": "HP Chart",
+            "caption": "<p>High Priority Inlets</p>\n",
+            "showLastUpdate": true,
+            "noDataVerticalAlignment": "middle",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        }
+    ],
+    "settings": {
+        "maxPaginationRecords": 50000,
+        "allowElementResizing": false
+    },
+    "mapOverrides": {
+        "trackedFeatureRadius": 60
+    },
+    "theme": "light",
+    "themeOverrides": {},
+    "numberPrefixOverrides": [
+        {
+            "key": "yotta",
+            "symbol": "Y",
+            "enabled": true
+        },
+        {
+            "key": "zeta",
+            "symbol": "Z",
+            "enabled": true
+        },
+        {
+            "key": "exa",
+            "symbol": "E",
+            "enabled": true
+        },
+        {
+            "key": "peta",
+            "symbol": "P",
+            "enabled": true
+        },
+        {
+            "key": "tera",
+            "symbol": "T",
+            "enabled": true
+        },
+        {
+            "key": "giga",
+            "symbol": "G",
+            "enabled": true
+        },
+        {
+            "key": "mega",
+            "symbol": "M",
+            "enabled": true
+        },
+        {
+            "key": "kilo",
+            "symbol": "k",
+            "enabled": true
+        },
+        {
+            "key": "base",
+            "symbol": "",
+            "enabled": true
+        },
+        {
+            "key": "deci",
+            "symbol": "d",
+            "enabled": false
+        },
+        {
+            "key": "centi",
+            "symbol": "c",
+            "enabled": false
+        },
+        {
+            "key": "milli",
+            "symbol": "m",
+            "enabled": false
+        },
+        {
+            "key": "micro",
+            "symbol": "µ",
+            "enabled": false
+        },
+        {
+            "key": "nano",
+            "symbol": "n",
+            "enabled": false
+        }
+    ],
+    "layout": {
+        "rootElement": {
+            "type": "stackLayoutElement",
+            "orientation": "col",
+            "elements": [
+                {
+                    "type": "stackLayoutElement",
+                    "orientation": "row",
+                    "elements": [
+                        {
+                            "type": "stackLayoutElement",
+                            "orientation": "col",
+                            "elements": [
+                                {
+                                    "type": "itemLayoutElement",
+                                    "id": "46416891-c61e-42a0-ba5d-bb324e47c75e",
+                                    "width": 0.5,
+                                    "height": 1,
+                                    "tabName": "Overall"
+                                },
+                                {
+                                    "type": "itemLayoutElement",
+                                    "id": "a2c4bb86-de17-457a-8580-d6bb247c8bf8",
+                                    "width": 0.5,
+                                    "height": 1
+                                }
+                            ],
+                            "width": 1,
+                            "height": 0.17397784723249887
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "7aac47d1-d14c-4a03-9237-57ca0a22733e",
+                            "width": 1,
+                            "height": 0.3231288319786948,
+                            "tabName": "High Pri."
+                        },
+                        {
+                            "type": "tabsLayoutElement",
+                            "elements": [
+                                {
+                                    "type": "itemLayoutElement",
+                                    "id": "339639d6-ad43-4fe7-ab98-55b90e06c26e",
+                                    "width": 1,
+                                    "height": 1,
+                                    "tabName": "Clean Status"
+                                },
+                                {
+                                    "type": "itemLayoutElement",
+                                    "id": "160038b3-118a-4ef5-9b77-b3461fb751c4",
+                                    "width": 1,
+                                    "height": 1,
+                                    "tabName": "Skip Reasons"
+                                }
+                            ],
+                            "width": 1,
+                            "height": 0.5028933207888063
+                        }
+                    ],
+                    "width": 0.24305535587638938,
+                    "height": 1
+                },
+                {
+                    "type": "stackLayoutElement",
+                    "orientation": "row",
+                    "elements": [
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "75a3ff9b-39e3-4562-a8a0-510bbc132f39",
+                            "width": 1,
+                            "height": 0.3416301472811195,
+                            "tabName": "Team"
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "8df54c92-a2f1-4e93-a532-e9538d6b2d57",
+                            "width": 1,
+                            "height": 0.3341851758400329,
+                            "tabName": "District"
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "739eaa11-0f74-4344-93b7-46b7dd9d96e5",
+                            "width": 1,
+                            "height": 0.32418467687884767
+                        }
+                    ],
+                    "width": 0.2559532272518682,
+                    "height": 1
+                },
+                {
+                    "type": "itemLayoutElement",
+                    "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517",
+                    "width": 0.35163182625661915,
+                    "height": 1
+                },
+                {
+                    "type": "itemLayoutElement",
+                    "id": "651b3cfe-a9d0-46e3-96ea-0e5f0ec505d9",
+                    "width": 0.14935959061512344,
+                    "height": 1
+                }
+            ],
+            "width": 0.9999999999999999,
+            "height": 1
+        }
+    }
+}

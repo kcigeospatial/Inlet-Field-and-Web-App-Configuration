@@ -1,0 +1,1269 @@
+{
+    "theme": {
+        "name": "FoldableTheme",
+        "styles": [
+            "black",
+            "yellow",
+            "default",
+            "blue",
+            "cyan",
+            "green",
+            "purple",
+            "red"
+        ],
+        "version": "2.13",
+        "sharedTheme": {
+            "isPortalSupport": true,
+            "useHeader": false,
+            "useLogo": false
+        }
+    },
+    "portalUrl": "https://maryland.maps.arcgis.com",
+    "appId": "",
+    "authorizedCrossOriginDomains": [],
+    "title": "MDOT SHA Inlet Cleaning QA/QC App",
+    "subtitle": "",
+    "keepAppState": true,
+    "logo": "https://maryland.maps.arcgis.com/sharing/rest/content/items/${itemId}/resources/inConfig/11631852082739225.png",
+    "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+    "links": [],
+    "widgetOnScreen": {
+        "widgets": [
+            {
+                "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+                "position": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 0,
+                    "height": 40,
+                    "relativeTo": "browser"
+                },
+                "version": "2.14",
+                "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+                "name": "HeaderController"
+            },
+            {
+                "uri": "widgets/Scalebar/Widget",
+                "position": {
+                    "left": 7,
+                    "bottom": 25,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_Scalebar_Widget_2",
+                "name": "Scalebar"
+            },
+            {
+                "uri": "widgets/Search/Widget",
+                "position": {
+                    "left": 55,
+                    "top": 5,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_Search_Widget_3",
+                "name": "Search",
+                "config": {
+                    "allPlaceholder": "",
+                    "showInfoWindowOnSelect": true,
+                    "sources": [
+                        {
+                            "layerId": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
+                            "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
+                            "name": "Inlet",
+                            "placeholder": "Inlet Point",
+                            "searchFields": [
+                                "SHA_STR_NO"
+                            ],
+                            "displayField": "SHA_STR_NO",
+                            "exactMatch": false,
+                            "searchInCurrentMapExtent": false,
+                            "panToScale": false,
+                            "zoomScale": null,
+                            "maxSuggestions": 6,
+                            "maxResults": 6,
+                            "type": "query"
+                        },
+                        {
+                            "layerId": "Inlet_Cleaning_QC_7350",
+                            "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Inlet_Cleaning_QC/FeatureServer/0",
+                            "name": "Inlet Cleaning QC (S123)",
+                            "placeholder": "QC Layer",
+                            "searchFields": [
+                                "REL_SHA_STR_NO"
+                            ],
+                            "displayField": "REL_SHA_STR_NO",
+                            "exactMatch": false,
+                            "searchInCurrentMapExtent": false,
+                            "panToScale": false,
+                            "zoomScale": null,
+                            "maxSuggestions": 6,
+                            "maxResults": 6,
+                            "type": "query"
+                        },
+                        {
+                            "url": "https://geodata.md.gov/imap/rest/services/GeocodeServices/MD_CompositeLocator/GeocodeServer",
+                            "name": "MD Statewide Composite Locator",
+                            "singleLineFieldName": "SingleLine",
+                            "placeholder": "Find address or place",
+                            "countryCode": "",
+                            "panToScale": false,
+                            "zoomScale": null,
+                            "maxSuggestions": 6,
+                            "maxResults": 6,
+                            "searchInCurrentMapExtent": false,
+                            "enableLocalSearch": false,
+                            "localSearchMinScale": 300000,
+                            "localSearchDistance": 50000,
+                            "radiusUnit": "meter",
+                            "type": "locator"
+                        }
+                    ]
+                }
+            },
+            {
+                "uri": "widgets/Coordinate/Widget",
+                "position": {
+                    "left": 7,
+                    "bottom": 5,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_Coordinate_Widget_4",
+                "name": "Coordinate"
+            },
+            {
+                "position": {
+                    "left": 55,
+                    "top": 45,
+                    "relativeTo": "map"
+                },
+                "placeholderIndex": 1,
+                "id": "_5"
+            },
+            {
+                "position": {
+                    "left": 105,
+                    "top": 45,
+                    "relativeTo": "map"
+                },
+                "placeholderIndex": 2,
+                "id": "_6"
+            },
+            {
+                "position": {
+                    "left": 155,
+                    "top": 45,
+                    "relativeTo": "map"
+                },
+                "placeholderIndex": 3,
+                "id": "_7"
+            },
+            {
+                "position": {
+                    "left": 205,
+                    "top": 45,
+                    "relativeTo": "map"
+                },
+                "placeholderIndex": 4,
+                "id": "_8"
+            },
+            {
+                "position": {
+                    "left": 255,
+                    "top": 45,
+                    "relativeTo": "map"
+                },
+                "placeholderIndex": 5,
+                "id": "_9"
+            },
+            {
+                "uri": "widgets/OverviewMap/Widget",
+                "position": {
+                    "bottom": 0,
+                    "right": 0,
+                    "zIndex": 1,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_OverviewMap_Widget_10",
+                "name": "OverviewMap"
+            },
+            {
+                "uri": "widgets/HomeButton/Widget",
+                "position": {
+                    "left": 7,
+                    "top": 75,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_HomeButton_Widget_11",
+                "name": "HomeButton"
+            },
+            {
+                "uri": "widgets/MyLocation/Widget",
+                "position": {
+                    "left": 7,
+                    "top": 110,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_MyLocation_Widget_12",
+                "name": "MyLocation"
+            },
+            {
+                "uri": "widgets/AttributeTable/Widget",
+                "position": {
+                    "relativeTo": "browser"
+                },
+                "version": "2.14",
+                "id": "widgets_AttributeTable_Widget_13",
+                "name": "AttributeTable",
+                "config": {
+                    "layerInfos": [
+                        {
+                            "name": "Inlet Cleaning QC (S123)",
+                            "id": "Inlet_Cleaning_QC_7350",
+                            "layer": {
+                                "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Inlet_Cleaning_QC/FeatureServer/0",
+                                "fields": [
+                                    {
+                                        "show": false,
+                                        "name": "objectid",
+                                        "alias": "ObjectID"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "globalid",
+                                        "alias": "GlobalID"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "S123_USERNAME",
+                                        "alias": "Form Username"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "REL_SHA_STR_NO",
+                                        "alias": "Inspected SHA Structure Number"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "REL_GLOBALID",
+                                        "alias": "Inspected Global ID"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "Creator",
+                                        "alias": "Creator"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "CLEAN_TEAM",
+                                        "alias": "Team"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "INSPECTION_DATE",
+                                        "alias": "Inspection Date"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "CLEAN_STATUS",
+                                        "alias": "Clean Status"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "SKIP_INLET",
+                                        "alias": "Skip Inlet"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "SKIP_INLET_OTHER",
+                                        "alias": "Other Skip Reason"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PRE_MISSING",
+                                        "alias": "Override a Pre-Cleaning Required Photo"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PRE_COM",
+                                        "alias": "Pre-cleaning Comments"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PIPE_CONDITION_COM",
+                                        "alias": "Pipe Condition Comment"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "POST_COM",
+                                        "alias": "Post-cleaning Comments"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "CreationDate",
+                                        "alias": "CreationDate"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "EditDate",
+                                        "alias": "EditDate"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "Editor",
+                                        "alias": "Editor"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PIPE_CONDITION",
+                                        "alias": "Pipe Condition"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PIPE_CLEANED",
+                                        "alias": "Pipe Cleaned"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "PIPE_CLEANED_LIN_FT",
+                                        "alias": "Linear Feet of Pipe Cleaned"
+                                    },
+                                    {
+                                        "show": false,
+                                        "name": "CLEAN_STATUS_V2",
+                                        "alias": "Clean Status with Pipe"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "REL_MD_DISTRICT",
+                                        "alias": "MDOT SHA District"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "REL_MD_MSHOP",
+                                        "alias": "SHA Maint. Shop"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "REL_STRUCTURE_ID",
+                                        "alias": "Inspected Structure ID"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "FORM_VERSION",
+                                        "alias": "Form Version"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "FORM_START",
+                                        "alias": "Form Start Date and Time"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "FORM_END",
+                                        "alias": "Form End Time"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "QC_STATUS",
+                                        "alias": "QC Status"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "QC_STATUS_COM",
+                                        "alias": "QC Status Comment"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "QC_STATUS_DATE",
+                                        "alias": "QC Status Date"
+                                    },
+                                    {
+                                        "show": true,
+                                        "name": "QC_INITIALS",
+                                        "alias": "QC'er Initials"
+                                    }
+                                ]
+                            },
+                            "show": true,
+                            "showAttachments": false,
+                            "sortField": "objectid",
+                            "isDescending": false
+                        },
+                        {
+                            "name": "MDOT SHA District Boundaries",
+                            "id": "MD_MDOTSHADistrictBoundaries_8469",
+                            "layer": {
+                                "url": "https://geodata.md.gov/imap/rest/services/Transportation/MD_MDOTSHADistrictBoundaries/FeatureServer/0"
+                            },
+                            "show": false,
+                            "showAttachments": false,
+                            "sortField": "OBJECTID",
+                            "isDescending": false
+                        },
+                        {
+                            "name": "Inlet",
+                            "id": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
+                            "layer": {
+                                "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0"
+                            },
+                            "show": true,
+                            "showAttachments": false,
+                            "sortField": "OBJECTID",
+                            "isDescending": false
+                        },
+                        {
+                            "name": "Maryland Six Inch Imagery - Image Service",
+                            "id": "MD_SixInchImagery_4285",
+                            "layer": {
+                                "url": "https://geodata.md.gov/imap/rest/services/Imagery/MD_SixInchImagery/ImageServer"
+                            },
+                            "show": false,
+                            "showAttachments": false,
+                            "sortField": "OBJECTID",
+                            "isDescending": false
+                        }
+                    ],
+                    "table": {
+                        "pageSizeOptions": [
+                            25,
+                            50,
+                            100,
+                            1000
+                        ]
+                    },
+                    "hideExportButton": false,
+                    "initiallyExpand": true,
+                    "filterByMapExtent": false,
+                    "allowTextSelection": true,
+                    "syncWithLayers": false
+                }
+            },
+            {
+                "uri": "widgets/Splash/Widget",
+                "visible": false,
+                "position": {
+                    "relativeTo": "browser"
+                },
+                "version": "2.14",
+                "id": "widgets_Splash_Widget_14",
+                "name": "Splash"
+            },
+            {
+                "uri": "widgets/ZoomSlider/Widget",
+                "position": {
+                    "top": 5,
+                    "left": 7,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_ZoomSlider_Widget_15",
+                "name": "ZoomSlider"
+            },
+            {
+                "uri": "widgets/ExtentNavigate/Widget",
+                "visible": false,
+                "position": {
+                    "top": 190,
+                    "left": 7,
+                    "relativeTo": "map"
+                },
+                "id": "widgets_ExtentNavigate_Widget_16",
+                "name": "ExtentNavigate",
+                "version": "2.14"
+            },
+            {
+                "uri": "widgets/FullScreen/Widget",
+                "visible": false,
+                "position": {
+                    "top": 150,
+                    "left": 7,
+                    "relativeTo": "map"
+                },
+                "version": "2.14",
+                "id": "widgets_FullScreen_Widget_17",
+                "name": "FullScreen"
+            }
+        ],
+        "panel": {
+            "uri": "jimu/OnScreenWidgetPanel",
+            "position": {
+                "relativeTo": "map"
+            }
+        }
+    },
+    "map": {
+        "3D": false,
+        "2D": true,
+        "position": {
+            "left": 0,
+            "top": 40,
+            "right": 0,
+            "bottom": 0
+        },
+        "itemId": "d64263668c1f4b509a8712acdbf11168",
+        "mapOptions": {},
+        "id": "map",
+        "portalUrl": "https://maryland.maps.arcgis.com",
+        "appProxy": {
+            "mapItemId": "d64263668c1f4b509a8712acdbf11168",
+            "proxyItems": []
+        }
+    },
+    "widgetPool": {
+        "panel": {
+            "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+            "position": {
+                "top": 5,
+                "right": 5,
+                "bottom": 5,
+                "zIndex": 5,
+                "relativeTo": "map"
+            }
+        },
+        "widgets": [
+            {
+                "name": "SmartEditor",
+                "version": "2.14",
+                "uri": "widgets/SmartEditor/Widget",
+                "config": {
+                    "editor": {
+                        "layerInfos": [
+                            {
+                                "featureLayer": {
+                                    "id": "Inlet_Cleaning_QC_7350"
+                                },
+                                "disableGeometryUpdate": false,
+                                "allowUpdateOnly": true,
+                                "allowDelete": false,
+                                "fieldInfos": [
+                                    {
+                                        "fieldName": "S123_USERNAME",
+                                        "isEditable": false,
+                                        "visible": false
+                                    },
+                                    {
+                                        "fieldName": "CLEAN_STATUS",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "FORM_VERSION",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "REL_SHA_STR_NO",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "INSPECTION_DATE",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PRE_COM",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "POST_COM",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "SKIP_INLET",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "SKIP_INLET_OTHER",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PRE_MISSING",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PIPE_CONDITION",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PIPE_CONDITION_COM",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PIPE_CLEANED",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "PIPE_CLEANED_LIN_FT",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "CLEAN_STATUS_V2",
+                                        "isEditable": false,
+                                        "visible": false
+                                    },
+                                    {
+                                        "fieldName": "REL_MD_DISTRICT",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "QC_STATUS",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "QC_STATUS_COM",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "QC_STATUS_DATE",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "QC_INITIALS",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "CLEAN_TEAM",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "REL_GLOBALID",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "REL_STRUCTURE_ID",
+                                        "isEditable": false,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "FORM_START",
+                                        "isEditable": false,
+                                        "visible": false
+                                    },
+                                    {
+                                        "fieldName": "FORM_END",
+                                        "isEditable": false,
+                                        "visible": false
+                                    }
+                                ],
+                                "_editFlag": true,
+                                "fieldValidations": {},
+                                "relationshipInfos": [],
+                                "fieldValues": {},
+                                "attachmentValidations": {}
+                            },
+                            {
+                                "featureLayer": {
+                                    "id": "MD_MDOTSHADistrictBoundaries_8469"
+                                },
+                                "disableGeometryUpdate": true,
+                                "allowUpdateOnly": true,
+                                "allowDelete": false,
+                                "fieldInfos": [
+                                    {
+                                        "fieldName": "District_Number",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "Website",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "Service_Request",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Map",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Street_Address",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Phone_Number",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Phone_800",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Fax_Number",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Email_Address",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Office_Business_Hours",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Counties",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Shops",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_Shops_Business_Hours",
+                                        "isEditable": true,
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "District_News_Feed",
+                                        "isEditable": true,
+                                        "visible": true
+                                    }
+                                ],
+                                "_editFlag": null,
+                                "fieldValidations": {},
+                                "relationshipInfos": []
+                            }
+                        ],
+                        "displayPromptOnSave": false,
+                        "displayPromptOnDelete": false,
+                        "removeOnSave": false,
+                        "useFilterEditor": false,
+                        "listenToGF": false,
+                        "keepTemplateSelected": false,
+                        "editGeometryDefault": false,
+                        "autoSaveEdits": false,
+                        "presetInfos": {},
+                        "displayShapeSelector": false,
+                        "createNewFeaturesFromExisting": false,
+                        "overrideDefaultsByCopiedFeature": false,
+                        "displayPresetTop": false,
+                        "enableAttributeUpdates": false,
+                        "enableAutomaticAttributeUpdates": false,
+                        "enableLockingMapNavigation": false,
+                        "enableMovingSelectedFeatureToGPS": false,
+                        "enableMovingSelectedFeatureToXY": false,
+                        "showActionButtonsAbove": false,
+                        "editDescription": "Select a template to create features",
+                        "defaultToleranceSettings": {
+                            "value": 0,
+                            "unit": "meters"
+                        }
+                    },
+                    "geocoderSettings": {
+                        "url": "https://geodata.md.gov/imap/rest/services/GeocodeServices/MD_CompositeLocator/GeocodeServer",
+                        "fields": [
+                            {
+                                "name": "Loc_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Loc_name",
+                                "required": false,
+                                "length": 14
+                            },
+                            {
+                                "name": "Shape",
+                                "type": "esriFieldTypeGeometry",
+                                "alias": "Shape",
+                                "required": false
+                            },
+                            {
+                                "name": "Score",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Score",
+                                "required": false
+                            },
+                            {
+                                "name": "Match_addr",
+                                "type": "esriFieldTypeString",
+                                "alias": "Match_addr",
+                                "required": false,
+                                "length": 120
+                            },
+                            {
+                                "name": "Addr_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Addr_type",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "AddNum",
+                                "type": "esriFieldTypeString",
+                                "alias": "AddNum",
+                                "required": false,
+                                "length": 12
+                            },
+                            {
+                                "name": "Side",
+                                "type": "esriFieldTypeString",
+                                "alias": "Side",
+                                "required": false,
+                                "length": 1
+                            },
+                            {
+                                "name": "StPreDir",
+                                "type": "esriFieldTypeString",
+                                "alias": "StPreDir",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "StPreType",
+                                "type": "esriFieldTypeString",
+                                "alias": "StPreType",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "StName",
+                                "type": "esriFieldTypeString",
+                                "alias": "StName",
+                                "required": false,
+                                "length": 70
+                            },
+                            {
+                                "name": "StType",
+                                "type": "esriFieldTypeString",
+                                "alias": "StType",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "StDir",
+                                "type": "esriFieldTypeString",
+                                "alias": "StDir",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "StAddr",
+                                "type": "esriFieldTypeString",
+                                "alias": "StAddr",
+                                "required": false,
+                                "length": 120
+                            },
+                            {
+                                "name": "City",
+                                "type": "esriFieldTypeString",
+                                "alias": "City",
+                                "required": false,
+                                "length": 70
+                            },
+                            {
+                                "name": "County",
+                                "type": "esriFieldTypeString",
+                                "alias": "County",
+                                "required": false,
+                                "length": 90
+                            },
+                            {
+                                "name": "State",
+                                "type": "esriFieldTypeString",
+                                "alias": "State",
+                                "required": false,
+                                "length": 100
+                            },
+                            {
+                                "name": "StateAbbr",
+                                "type": "esriFieldTypeString",
+                                "alias": "StateAbbr",
+                                "required": false,
+                                "length": 100
+                            },
+                            {
+                                "name": "ZIP",
+                                "type": "esriFieldTypeString",
+                                "alias": "ZIP",
+                                "required": false,
+                                "length": 10
+                            },
+                            {
+                                "name": "X",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "X",
+                                "required": false
+                            },
+                            {
+                                "name": "Y",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Y",
+                                "required": false
+                            },
+                            {
+                                "name": "DisplayX",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "DisplayX",
+                                "required": false
+                            },
+                            {
+                                "name": "DisplayY",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "DisplayY",
+                                "required": false
+                            },
+                            {
+                                "name": "AddNumFrom",
+                                "type": "esriFieldTypeString",
+                                "alias": "AddNumFrom",
+                                "required": false,
+                                "length": 10
+                            },
+                            {
+                                "name": "AddNumTo",
+                                "type": "esriFieldTypeString",
+                                "alias": "AddNumTo",
+                                "required": false,
+                                "length": 10
+                            },
+                            {
+                                "name": "Country",
+                                "type": "esriFieldTypeString",
+                                "alias": "Country",
+                                "required": false,
+                                "length": 10
+                            },
+                            {
+                                "name": "LangCode",
+                                "type": "esriFieldTypeString",
+                                "alias": "LangCode",
+                                "required": false,
+                                "length": 3
+                            },
+                            {
+                                "name": "Distance",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Distance",
+                                "required": false
+                            },
+                            {
+                                "name": "Descr",
+                                "type": "esriFieldTypeString",
+                                "alias": "Description",
+                                "required": false,
+                                "length": 200
+                            },
+                            {
+                                "name": "PlaceName",
+                                "type": "esriFieldTypeString",
+                                "alias": "PlaceName",
+                                "required": false,
+                                "length": 120
+                            },
+                            {
+                                "name": "Place_addr",
+                                "type": "esriFieldTypeString",
+                                "alias": "Place_addr",
+                                "required": false,
+                                "length": 200
+                            },
+                            {
+                                "name": "Nbrhd",
+                                "type": "esriFieldTypeString",
+                                "alias": "Neighborhood",
+                                "required": false,
+                                "length": 50
+                            },
+                            {
+                                "name": "Phone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Phone",
+                                "required": false,
+                                "length": 20
+                            },
+                            {
+                                "name": "URL",
+                                "type": "esriFieldTypeString",
+                                "alias": "URL",
+                                "required": false,
+                                "length": 200
+                            },
+                            {
+                                "name": "Xmin",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Xmin",
+                                "required": false
+                            },
+                            {
+                                "name": "Xmax",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Xmax",
+                                "required": false
+                            },
+                            {
+                                "name": "Ymin",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Ymin",
+                                "required": false
+                            },
+                            {
+                                "name": "Ymax",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Ymax",
+                                "required": false
+                            },
+                            {
+                                "name": "Type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Type",
+                                "required": false,
+                                "length": 120
+                            },
+                            {
+                                "name": "Rank",
+                                "type": "esriFieldTypeString",
+                                "alias": "Rank",
+                                "required": false,
+                                "length": 20
+                            }
+                        ]
+                    },
+                    "smartActionGroups": {}
+                },
+                "index": 2,
+                "id": "widgets_SmartEditor_Widget_21"
+            },
+            {
+                "name": "Filter",
+                "version": "2.14",
+                "uri": "widgets/Filter/Widget",
+                "config": {
+                    "taskOper": "OR",
+                    "groupByLayer": true,
+                    "zoomto": false,
+                    "allowCustom": true,
+                    "filters": [
+                        {
+                            "layerId": "Inlet_Cleaning_QC_7350",
+                            "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Inlet_Cleaning_QC/FeatureServer/0",
+                            "name": "Inlet Cleaning QC by Date",
+                            "filter": {
+                                "logicalOperator": "AND",
+                                "parts": [
+                                    {
+                                        "fieldObj": {
+                                            "name": "INSPECTION_DATE",
+                                            "label": "INSPECTION_DATE",
+                                            "dateFormat": "shortDate",
+                                            "shortType": "date",
+                                            "type": "esriFieldTypeDate"
+                                        },
+                                        "operator": "dateOperatorIsBetween",
+                                        "valueObj": {
+                                            "isValid": true,
+                                            "type": "value",
+                                            "value1": null,
+                                            "value2": null,
+                                            "virtualDate1": null,
+                                            "virtualDate2": null
+                                        },
+                                        "interactiveObj": {
+                                            "prompt": "Inspection Date is between",
+                                            "hint": "",
+                                            "cascade": "none"
+                                        },
+                                        "caseSensitive": false
+                                    }
+                                ],
+                                "expr": "",
+                                "displaySQL": ""
+                            },
+                            "icon": null,
+                            "enableMapFilter": true,
+                            "autoApplyWhenWidgetOpen": false,
+                            "collapse": false,
+                            "symbol": {
+                                "color": [
+                                    0,
+                                    0,
+                                    128,
+                                    128
+                                ],
+                                "size": 18,
+                                "angle": 0,
+                                "xoffset": 0,
+                                "yoffset": 0,
+                                "type": "esriSMS",
+                                "style": "esriSMSCircle",
+                                "outline": {
+                                    "color": [
+                                        0,
+                                        0,
+                                        128,
+                                        255
+                                    ],
+                                    "width": 0.75,
+                                    "type": "esriSLS",
+                                    "style": "esriSLSSolid"
+                                }
+                            }
+                        },
+                        {
+                            "layerId": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
+                            "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
+                            "name": "Inlet Point by Date",
+                            "filter": {
+                                "logicalOperator": "AND",
+                                "parts": [
+                                    {
+                                        "fieldObj": {
+                                            "name": "CLI_INSPECTION_DATE",
+                                            "label": "CLI_INSPECTION_DATE",
+                                            "dateFormat": "",
+                                            "shortType": "date",
+                                            "type": "esriFieldTypeDate"
+                                        },
+                                        "operator": "dateOperatorIsBetween",
+                                        "valueObj": {
+                                            "isValid": true,
+                                            "type": "value",
+                                            "value1": null,
+                                            "value2": null,
+                                            "virtualDate1": null,
+                                            "virtualDate2": null
+                                        },
+                                        "interactiveObj": {
+                                            "prompt": "Inspection Date is between",
+                                            "hint": "",
+                                            "cascade": "none"
+                                        },
+                                        "caseSensitive": false
+                                    }
+                                ],
+                                "expr": "",
+                                "displaySQL": ""
+                            },
+                            "icon": null,
+                            "enableMapFilter": true,
+                            "autoApplyWhenWidgetOpen": false,
+                            "collapse": false,
+                            "symbol": {
+                                "color": [
+                                    0,
+                                    0,
+                                    128,
+                                    128
+                                ],
+                                "size": 18,
+                                "angle": 0,
+                                "xoffset": 0,
+                                "yoffset": 0,
+                                "type": "esriSMS",
+                                "style": "esriSMSSquare",
+                                "outline": {
+                                    "color": [
+                                        0,
+                                        0,
+                                        128,
+                                        255
+                                    ],
+                                    "width": 0.75,
+                                    "type": "esriSLS",
+                                    "style": "esriSLSSolid"
+                                }
+                            }
+                        }
+                    ],
+                    "zoombackto": false,
+                    "allowResetAll": false,
+                    "allowTurnOffAll": false
+                },
+                "index": 3,
+                "id": "widgets_Filter_Widget_20"
+            },
+            {
+                "uri": "widgets/Legend/Widget",
+                "version": "2.14",
+                "id": "widgets_Legend_Widget_18",
+                "name": "Legend",
+                "index": 4
+            },
+            {
+                "uri": "widgets/LayerList/Widget",
+                "version": "2.14",
+                "id": "widgets_LayerList_Widget_19",
+                "name": "LayerList",
+                "index": 5
+            }
+        ],
+        "groups": []
+    },
+    "mobileLayout": {
+        "widgetOnScreen": {
+            "widgets": {
+                "widgets/Scalebar/Widget": {
+                    "position": {
+                        "left": 7,
+                        "bottom": 40
+                    },
+                    "version": "1.4"
+                },
+                "widgets/Coordinate/Widget": {
+                    "position": {
+                        "left": 7,
+                        "bottom": 17
+                    },
+                    "version": "1.4"
+                }
+            }
+        }
+    },
+    "loadingPage": {
+        "backgroundColor": "#508dca",
+        "backgroundImage": {
+            "visible": false
+        },
+        "loadingGif": {
+            "visible": true,
+            "uri": "configs/loading/images/predefined_loading_1.gif",
+            "width": 58,
+            "height": 29
+        }
+    },
+    "wabVersion": "2.14",
+    "_buildInfo": {
+        "widgetManifestsMerged": true
+    },
+    "isWebTier": false,
+    "httpProxy": {
+        "useProxy": true,
+        "url": "https://maryland.maps.arcgis.com/sharing/proxy"
+    },
+    "dataSource": {
+        "dataSources": {},
+        "settings": {}
+    },
+    "logoLink": "",
+    "appItemId": "3516127b072e421fb735caaa095478e4"
+}

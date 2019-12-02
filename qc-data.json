@@ -69,7 +69,7 @@
                     "sources": [
                         {
                             "layerId": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
-                            "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
+                            "url": "https://utility.arcgis.com/usrsvcs/servers/2870db732b6741fcac259cc67d401392/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
                             "name": "Inlet",
                             "placeholder": "Inlet Point",
                             "searchFields": [
@@ -409,7 +409,7 @@
                             "name": "Inlet",
                             "id": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
                             "layer": {
-                                "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0"
+                                "url": "https://utility.arcgis.com/usrsvcs/servers/2870db732b6741fcac259cc67d401392/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0"
                             },
                             "show": true,
                             "showAttachments": false,
@@ -1131,7 +1131,7 @@
                         },
                         {
                             "layerId": "Inlet_ICP_PC_Status_View_Maryland_SHA_710_0",
-                            "url": "https://maps.roads.maryland.gov/arcgis/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
+                            "url": "https://utility.arcgis.com/usrsvcs/servers/2870db732b6741fcac259cc67d401392/rest/services/Inlet_Inspection/Inlet_ICP_PC_Status_View_Maryland_SHA/MapServer/0",
                             "name": "Inlet Point by Date",
                             "filter": {
                                 "logicalOperator": "AND",
